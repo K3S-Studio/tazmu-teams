@@ -1,0 +1,15 @@
+{
+  "name": "tazmu-teams",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Open-source AI team playbooks for Tazmu and any other agent product",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/validate.mjs",
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "yaml": "^2.9.0"
+  }
+}

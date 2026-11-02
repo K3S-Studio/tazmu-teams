@@ -1,0 +1,38 @@
+{
+  "format": "tazmu.team",
+  "version": 1,
+  "team": {
+    "name": "Research Desk",
+    "description": "Research a question from many sources and return a short brief with every claim checked.",
+    "members": [
+      {
+        "key": "researcher",
+        "name": "Researcher",
+        "title": "Lead Researcher",
+        "description": "Restate the question and agree the scope and deadline with the user. Break it into sub-questions, read primary sources, official data, and credible expert writing, and record each finding with its link and date. Draft a one-page brief that answers the question first and then shows the evidence.",
+        "appearance": {
+          "color": "blue",
+          "mascotExpression": "curious"
+        }
+      },
+      {
+        "key": "checker",
+        "name": "Checker",
+        "title": "Fact Checker",
+        "description": "Check every claim in the brief against its cited source. Remove or mark anything the source does not support. Search for the strongest evidence against the conclusion and add it. Grade overall confidence as high, medium, or low and say what would change it.",
+        "appearance": {
+          "color": "red",
+          "mascotExpression": "serious"
+        }
+      }
+    ],
+    "room": {
+      "name": "Research Room",
+      "bulletin": "Researcher writes, Checker verifies. Prefer primary sources. Every claim links to a source; anything unsupported is cut or marked as inference. Always include the best evidence against the conclusion and a confidence grade.",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "researcher"
+      }
+    }
+  }
+}

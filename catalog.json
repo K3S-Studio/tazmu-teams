@@ -1,0 +1,434 @@
+{
+  "format": "tazmu.catalog",
+  "version": 1,
+  "teams": [
+    {
+      "slug": "seo-growth",
+      "name": "SEO Growth Team",
+      "summary": "Turn search opportunities into prioritized technical fixes and useful content.",
+      "category": "Marketing",
+      "outcome": "Find and prioritize the search work most likely to grow qualified traffic.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/seo-growth.md",
+      "manifest": "teams/seo-growth/team.mausteam.json",
+      "readme": "teams/seo-growth/README.md",
+      "members": 4,
+      "skills": [
+        "teams/seo-growth/skills/keyword-opportunity-map/SKILL.md",
+        "teams/seo-growth/skills/technical-seo-triage/SKILL.md",
+        "teams/seo-growth/skills/content-brief/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Google Search Console", "Google Analytics", "Google Sheets"]
+      }
+    },
+    {
+      "slug": "engineering",
+      "name": "Engineering Team",
+      "summary": "Plan, build, review, test, and ship software with clear ownership.",
+      "category": "Engineering",
+      "outcome": "Take a software change from product intent to a verified release decision.",
+      "setupMinutes": 3,
+      "featured": true,
+      "package": "packages/engineering.md",
+      "manifest": "teams/engineering/team.mausteam.json",
+      "readme": "teams/engineering/README.md",
+      "members": 4,
+      "skills": [
+        "teams/engineering/skills/architecture-decision/SKILL.md",
+        "teams/engineering/skills/implementation-plan/SKILL.md",
+        "teams/engineering/skills/release-readiness/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["GitHub"]
+      }
+    },
+    {
+      "slug": "100x-marketing",
+      "name": "100x Marketing Team",
+      "summary": "Find a sharp position, ship campaigns quickly, and learn from measured experiments.",
+      "category": "Marketing",
+      "outcome": "Launch one focused campaign and make an evidence-based stop-or-scale decision.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/100x-marketing.md",
+      "manifest": "teams/100x-marketing/team.mausteam.json",
+      "readme": "teams/100x-marketing/README.md",
+      "members": 4,
+      "skills": [
+        "teams/100x-marketing/skills/positioning-brief/SKILL.md",
+        "teams/100x-marketing/skills/campaign-sprint/SKILL.md",
+        "teams/100x-marketing/skills/experiment-review/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Google Analytics", "Google Sheets", "Slack"]
+      }
+    },
+    {
+      "slug": "reddit-lead-miner",
+      "name": "Reddit Lead Miner",
+      "summary": "Find high-intent public conversations, qualify them against an ICP, and prepare context-first outreach.",
+      "category": "Sales",
+      "outcome": "Surface qualified Reddit leads with evidence and a useful next step each morning.",
+      "setupMinutes": 6,
+      "featured": true,
+      "package": "packages/reddit-lead-miner.md",
+      "manifest": "teams/reddit-lead-miner/team.mausteam.json",
+      "readme": "teams/reddit-lead-miner/README.md",
+      "members": 2,
+      "skills": [
+        "teams/reddit-lead-miner/skills/lead-qualification/SKILL.md",
+        "teams/reddit-lead-miner/skills/safe-outreach/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Reddit", "Google Sheets"]
+      }
+    },
+    {
+      "slug": "competitor-watch",
+      "name": "Competitor Watch",
+      "summary": "Monitor public competitor changes and turn meaningful evidence into a calm decision brief.",
+      "category": "Strategy",
+      "outcome": "Know which competitor moves deserve a response and which should be ignored.",
+      "setupMinutes": 4,
+      "featured": true,
+      "package": "packages/competitor-watch.md",
+      "manifest": "teams/competitor-watch/team.mausteam.json",
+      "readme": "teams/competitor-watch/README.md",
+      "members": 2,
+      "skills": [
+        "teams/competitor-watch/skills/change-detection/SKILL.md",
+        "teams/competitor-watch/skills/decision-brief/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Google Sheets"]
+      }
+    },
+    {
+      "slug": "inbox-follow-up",
+      "name": "Inbox Follow-up",
+      "summary": "Find genuine sales conversations that went quiet and prepare grounded follow-up drafts.",
+      "category": "Sales",
+      "outcome": "Recover conversations where your team owes the next step without sending automatically.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/inbox-follow-up.md",
+      "manifest": "teams/inbox-follow-up/team.mausteam.json",
+      "readme": "teams/inbox-follow-up/README.md",
+      "members": 2,
+      "skills": [
+        "teams/inbox-follow-up/skills/follow-up-triage/SKILL.md",
+        "teams/inbox-follow-up/skills/specific-follow-up/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Gmail", "HubSpot"]
+      }
+    },
+    {
+      "slug": "daily-briefing",
+      "name": "Daily Briefing",
+      "summary": "Sweep inbox, calendar, and chat each morning and keep only the items that need a decision.",
+      "category": "Productivity",
+      "outcome": "Read one source-linked briefing each morning instead of checking five apps.",
+      "setupMinutes": 4,
+      "featured": true,
+      "package": "packages/daily-briefing.md",
+      "manifest": "teams/daily-briefing/team.mausteam.json",
+      "readme": "teams/daily-briefing/README.md",
+      "members": 2,
+      "skills": [
+        "teams/daily-briefing/skills/morning-sweep/SKILL.md",
+        "teams/daily-briefing/skills/priority-filter/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Gmail", "Google Calendar", "Slack"]
+      }
+    },
+    {
+      "slug": "inbox-cleanup",
+      "name": "Inbox Cleanup",
+      "summary": "Triage a buried inbox, propose archives and unsubscribes, and act only on the batch you approve.",
+      "category": "Productivity",
+      "outcome": "Get the inbox down to the threads that need you, with every archive and unsubscribe approved first.",
+      "setupMinutes": 3,
+      "featured": true,
+      "package": "packages/inbox-cleanup.md",
+      "manifest": "teams/inbox-cleanup/team.mausteam.json",
+      "readme": "teams/inbox-cleanup/README.md",
+      "members": 2,
+      "skills": [
+        "teams/inbox-cleanup/skills/inbox-triage/SKILL.md",
+        "teams/inbox-cleanup/skills/unsubscribe-review/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Gmail"]
+      }
+    },
+    {
+      "slug": "meeting-prep",
+      "name": "Meeting Prep",
+      "summary": "Brief the user before important meetings and draft the follow-up afterwards.",
+      "category": "Sales",
+      "outcome": "Get a decision card before each external meeting and a follow-up draft within an hour after.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/meeting-prep.md",
+      "manifest": "teams/meeting-prep/team.mausteam.json",
+      "readme": "teams/meeting-prep/README.md",
+      "members": 2,
+      "skills": [
+        "teams/meeting-prep/skills/pre-meeting-brief/SKILL.md",
+        "teams/meeting-prep/skills/post-meeting-follow-up/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Google Calendar", "Gmail", "HubSpot"]
+      }
+    },
+    {
+      "slug": "outbound-sales",
+      "name": "Outbound Sales Desk",
+      "summary": "Research and rank target accounts against an ICP and prepare review-ready outreach drafts.",
+      "category": "Sales",
+      "outcome": "Wake up to a short ranked list of accounts with evidence and a draft for each.",
+      "setupMinutes": 6,
+      "featured": true,
+      "package": "packages/outbound-sales.md",
+      "manifest": "teams/outbound-sales/team.mausteam.json",
+      "readme": "teams/outbound-sales/README.md",
+      "members": 3,
+      "skills": [
+        "teams/outbound-sales/skills/account-research/SKILL.md",
+        "teams/outbound-sales/skills/icp-scoring/SKILL.md",
+        "teams/outbound-sales/skills/outreach-draft/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["HubSpot", "Gmail"]
+      }
+    },
+    {
+      "slug": "support-desk",
+      "name": "Customer Support Desk",
+      "summary": "Triage support tickets, draft grounded replies, and escalate refunds and bugs with evidence.",
+      "category": "Support",
+      "outcome": "Clear the routine tickets with approved drafts and hand you only the ones that need judgment.",
+      "setupMinutes": 6,
+      "featured": true,
+      "package": "packages/support-desk.md",
+      "manifest": "teams/support-desk/team.mausteam.json",
+      "readme": "teams/support-desk/README.md",
+      "members": 3,
+      "skills": [
+        "teams/support-desk/skills/ticket-triage/SKILL.md",
+        "teams/support-desk/skills/grounded-reply/SKILL.md",
+        "teams/support-desk/skills/escalation-pack/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Intercom", "Stripe", "Slack"]
+      }
+    },
+    {
+      "slug": "account-health",
+      "name": "Account Health Watch",
+      "summary": "Rank accounts by churn risk and expansion signals from usage, support, and billing data.",
+      "category": "Customer Success",
+      "outcome": "Get a weekly ranked watch list of at-risk and growing accounts with a next step for each.",
+      "setupMinutes": 6,
+      "featured": true,
+      "package": "packages/account-health.md",
+      "manifest": "teams/account-health/team.mausteam.json",
+      "readme": "teams/account-health/README.md",
+      "members": 2,
+      "skills": [
+        "teams/account-health/skills/health-scoring/SKILL.md",
+        "teams/account-health/skills/save-plan/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["HubSpot", "Stripe", "Intercom"]
+      }
+    },
+    {
+      "slug": "recruiting",
+      "name": "Recruiting Team",
+      "summary": "Source and screen candidates against written criteria and coordinate interview loops.",
+      "category": "Hiring",
+      "outcome": "Fill the pipeline with screened candidates and keep interview loops moving without dropped balls.",
+      "setupMinutes": 6,
+      "featured": true,
+      "package": "packages/recruiting.md",
+      "manifest": "teams/recruiting/team.mausteam.json",
+      "readme": "teams/recruiting/README.md",
+      "members": 3,
+      "skills": [
+        "teams/recruiting/skills/candidate-sourcing/SKILL.md",
+        "teams/recruiting/skills/application-screen/SKILL.md",
+        "teams/recruiting/skills/interview-loop/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Gmail", "Google Calendar", "LinkedIn"]
+      }
+    },
+    {
+      "slug": "expense-audit",
+      "name": "Expense and Subscription Audit",
+      "summary": "Match receipts to spend, flag exceptions, and find forgotten subscriptions and credits.",
+      "category": "Finance",
+      "outcome": "Get a weekly expense summary and a list of subscriptions to cancel, with the savings estimated.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/expense-audit.md",
+      "manifest": "teams/expense-audit/team.mausteam.json",
+      "readme": "teams/expense-audit/README.md",
+      "members": 2,
+      "skills": [
+        "teams/expense-audit/skills/receipt-match/SKILL.md",
+        "teams/expense-audit/skills/subscription-audit/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Gmail", "Google Sheets"]
+      }
+    },
+    {
+      "slug": "paid-ads-watch",
+      "name": "Paid Ads Watch",
+      "summary": "Monitor ad spend across platforms, flag waste, and write the weekly performance report.",
+      "category": "Marketing",
+      "outcome": "Catch overspend and broken campaigns within a day and get the weekly report written for you.",
+      "setupMinutes": 6,
+      "featured": true,
+      "package": "packages/paid-ads-watch.md",
+      "manifest": "teams/paid-ads-watch/team.mausteam.json",
+      "readme": "teams/paid-ads-watch/README.md",
+      "members": 2,
+      "skills": [
+        "teams/paid-ads-watch/skills/spend-alerts/SKILL.md",
+        "teams/paid-ads-watch/skills/weekly-ad-report/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Google Ads", "Meta Ads", "Google Sheets"]
+      }
+    },
+    {
+      "slug": "content-studio",
+      "name": "Content Studio",
+      "summary": "Plan, research, draft, and edit a weekly content calendar for social and blog channels.",
+      "category": "Content",
+      "outcome": "Fill next week's content calendar with researched drafts in your voice, ready to approve.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/content-studio.md",
+      "manifest": "teams/content-studio/team.mausteam.json",
+      "readme": "teams/content-studio/README.md",
+      "members": 4,
+      "skills": [
+        "teams/content-studio/skills/topic-radar/SKILL.md",
+        "teams/content-studio/skills/voice-draft/SKILL.md",
+        "teams/content-studio/skills/content-check/SKILL.md",
+        "teams/content-studio/skills/weekly-calendar/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Notion", "X", "LinkedIn"]
+      }
+    },
+    {
+      "slug": "clip-factory",
+      "name": "Clip Factory",
+      "summary": "Find clip-worthy moments in long videos and package them with hooks and captions.",
+      "category": "Content",
+      "outcome": "Get four ranked clip proposals a day from your long-form videos, ready for you to pick.",
+      "setupMinutes": 4,
+      "featured": true,
+      "package": "packages/clip-factory.md",
+      "manifest": "teams/clip-factory/team.mausteam.json",
+      "readme": "teams/clip-factory/README.md",
+      "members": 2,
+      "skills": [
+        "teams/clip-factory/skills/moment-finder/SKILL.md",
+        "teams/clip-factory/skills/clip-package/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["YouTube"]
+      }
+    },
+    {
+      "slug": "ai-search-visibility",
+      "name": "AI Search Visibility",
+      "summary": "Measure how AI assistants answer buying questions in your category and plan content to close the gaps.",
+      "category": "Marketing",
+      "outcome": "Know which buying questions AI assistants answer without you, and what to publish to change that.",
+      "setupMinutes": 4,
+      "featured": true,
+      "package": "packages/ai-search-visibility.md",
+      "manifest": "teams/ai-search-visibility/team.mausteam.json",
+      "readme": "teams/ai-search-visibility/README.md",
+      "members": 2,
+      "skills": [
+        "teams/ai-search-visibility/skills/assistant-audit/SKILL.md",
+        "teams/ai-search-visibility/skills/gap-plan/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Google Sheets"]
+      }
+    },
+    {
+      "slug": "relationship-crm",
+      "name": "Relationship CRM",
+      "summary": "Build a relationship database from email and calendar history and nudge timely check-ins.",
+      "category": "Productivity",
+      "outcome": "Have a living list of your important relationships and a weekly reminder of who to contact.",
+      "setupMinutes": 5,
+      "featured": true,
+      "package": "packages/relationship-crm.md",
+      "manifest": "teams/relationship-crm/team.mausteam.json",
+      "readme": "teams/relationship-crm/README.md",
+      "members": 2,
+      "skills": [
+        "teams/relationship-crm/skills/relationship-index/SKILL.md",
+        "teams/relationship-crm/skills/keep-in-touch/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["Google Calendar", "Gmail", "Notion"]
+      }
+    },
+    {
+      "slug": "oss-maintainer",
+      "name": "Open-Source Maintainer Desk",
+      "summary": "Triage issues and PRs against a written project vision and chase stale reviews.",
+      "category": "Engineering",
+      "outcome": "Spend maintainer time on direction, with every new issue and PR labeled and routed.",
+      "setupMinutes": 4,
+      "featured": true,
+      "package": "packages/oss-maintainer.md",
+      "manifest": "teams/oss-maintainer/team.mausteam.json",
+      "readme": "teams/oss-maintainer/README.md",
+      "members": 2,
+      "skills": [
+        "teams/oss-maintainer/skills/vision-triage/SKILL.md",
+        "teams/oss-maintainer/skills/pr-summary/SKILL.md"
+      ],
+      "requires": {
+        "apps": ["GitHub"]
+      }
+    },
+    {
+      "slug": "research-desk",
+      "name": "Research Desk",
+      "summary": "Research a question from many sources and return a short brief with every claim checked.",
+      "category": "Research",
+      "outcome": "Turn a hard question into a one-page brief where every claim links to its source.",
+      "setupMinutes": 2,
+      "featured": true,
+      "package": "packages/research-desk.md",
+      "manifest": "teams/research-desk/team.mausteam.json",
+      "readme": "teams/research-desk/README.md",
+      "members": 2,
+      "skills": [
+        "teams/research-desk/skills/research-brief/SKILL.md",
+        "teams/research-desk/skills/claim-check/SKILL.md"
+      ],
+      "requires": {
+        "apps": []
+      }
+    }
+  ]
+}
